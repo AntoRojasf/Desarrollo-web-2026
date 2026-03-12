@@ -1,0 +1,107 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estadísticas Vitales Chile - Noviembre 2025</title>
+
+<style>
+  body { font-family: Arial, sans-serif; padding: 20px; }
+
+  h1 { text-align: center; color: #222; }
+
+  .subtitulo { text-align: center; color: #666; font-size: 13px; margin-top: 4px; }
+
+  .parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    max-width: 680px;
+    margin: 30px auto;
+  }
+
+  .grafico {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 16px;
+    text-align: center;
+    background: #fafafa;
+  }
+
+  .grafico h2 {
+    font-size: 14px;
+    color: #333;
+    margin: 0 0 12px 0;
+  }
+
+  .donut { transform: rotate(-90deg); }
+
+  .leyenda { font-size: 12px; color: #444; margin-top: 10px; line-height: 1.8; }
+</style>
+
+<h1>Estadísticas Vitales Chile</h1>
+<p class="subtitulo">Fuente: INE · Cifras coyunturales noviembre 2025</p>
+
+<div class="parent">
+
+  <div class="grafico">
+    <h2>Defunciones por sexo</h2>
+    <svg width="140" height="140" viewBox="0 0 42 42" class="donut">
+      <circle cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+      <circle cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#ddd" stroke-width="3"></circle>
+      <circle cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#e74c3c" stroke-width="3" stroke-dasharray="51.7 48.3" stroke-dashoffset="0"></circle>
+      <circle cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#3498db" stroke-width="3" stroke-dasharray="48.3 51.7" stroke-dashoffset="-51.7"></circle>
+    </svg>
+    <div class="leyenda">
+      🔴 Hombres 51,7%<br>
+      🔵 Mujeres 48,3%
+    </div>
+  </div>
+
+  <div class="grafico">
+    <h2>Nacimientos por sexo</h2>
+    <svg width="140" height="140" viewBox="0 0 42 42" class="donut">
+      <circle cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+      <circle cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#ddd" stroke-width="3"></circle>
+      <circle cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#e67e22" stroke-width="3" stroke-dasharray="51.1 48.9" stroke-dashoffset="0"></circle>
+      <circle cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#1abc9c" stroke-width="3" stroke-dasharray="48.9 51.1" stroke-dashoffset="-51.1"></circle>
+    </svg>
+    <div class="leyenda">
+      🟠 Hombres 51,1%<br>
+      🟢 Mujeres 48,9%
+    </div>
+  </div>
+
+  <div class="grafico">
+    <h2>AUC por tipo de pareja</h2>
+    <svg width="140" height="140" viewBox="0 0 42 42" class="donut">
+      <circle cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+      <circle cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#ddd" stroke-width="3"></circle>
+      <circle cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#9b59b6" stroke-width="3" stroke-dasharray="89.5 10.5" stroke-dashoffset="0"></circle>
+      <circle cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#f1c40f" stroke-width="3" stroke-dasharray="10.5 89.5" stroke-dashoffset="-89.5"></circle>
+    </svg>
+    <div class="leyenda">
+      🟣 Distinto sexo 89,5%<br>
+      🟡 Mismo sexo 10,5%
+    </div>
+  </div>
+
+  <div class="grafico">
+    <h2>Defunciones por edad</h2>
+    <svg width="140" height="140" viewBox="0 0 42 42" class="donut">
+      <circle cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
+      <circle cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#ddd" stroke-width="3"></circle>
+      <circle cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#2980b9" stroke-width="3" stroke-dasharray="57 43" stroke-dashoffset="0"></circle>
+      <circle cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#e74c3c" stroke-width="3" stroke-dasharray="43 57" stroke-dashoffset="-57"></circle>
+    </svg>
+    <div class="leyenda">
+      🔵 Menores de 60 años 57%<br>
+      🔴 60 años o más 43%
+    </div>
+  </div>
+
+</div>
+
+<p style="text-align:center; font-size:11px; color:#aaa; margin-top:10px;">
+  Técnica SVG: <a href="https://heydonworks.com/article/scratch-made-svg-donut-pie-charts/">Scratch-made SVG Donut & Pie Charts in HTML5</a> ·
+  CSS Grid: <a href="https://mozilladevelopers.github.io/playground/css-grid/04-fr-unit/">Mozilla · fr unit</a> ·
+  <a href="https://datavizcatalogue.com/ES/metodos/grafico_de_donut.html">DataViz Catalogue</a> ·
+  Hecho con <a href="https://claude.ai/">claude.ai</a>
+</p>
